@@ -1,0 +1,256 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    /* border: 1px solid red; */
+    padding-top: 50px;
+    background-color: #f9f9f9;
+
+}
+
+.left-side {
+    /* border: 1px solid green; */
+    height: 545px;
+    /* margin-right: 20px; */
+    background-color: #fff;
+}
+
+@media (max-width: 768px) {
+    .right-side .r-ul {
+        margin-left: 0;
+    }
+}
+
+
+.right-side {
+    /* border: 1px solid blue; */
+
+    min-height: 600px;
+}
+
+.l-ul {
+    /* border: 1px solid red; */
+}
+
+.r-ul {
+    /* border: 1px solid red; */
+    margin-left: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.blank {
+    height: 94px;
+}
+
+/* form表单的全局样式 */
+@media (max-width:992px) {
+
+    /* 表单容器 */
+    .form-container {
+        width: 80% !important;
+    }
+}
+
+@media (max-width:320px) {
+
+    /* 表单容器 */
+    .form-container {
+        width: 95% !important;
+    }
+}
+
+@media (max-width:1026px) {
+
+    .el-dialog {
+        width: 90% !important;
+    }
+}
+
+@media (max-width:650px) {
+
+    .dynamic-line {
+        display: block !important;
+        width: 95% !important;
+        margin: 0 auto;
+    }
+
+    .delete-btn {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .calculator-btn:hover {
+        background-color: #c4141f !important;
+        color: #fff !important;
+        border: 1px solid #c4141f !important;
+    }
+
+    .element-btn:hover {
+        background-color: #c4141f !important;
+        color: #fff !important;
+        border: 1px solid #c4141f !important;
+    }
+
+
+
+
+}
+
+
+@media (max-width:550px) {
+    .r-ul{
+        margin-top: 20px;
+    }
+    .dynamic-li {
+        width: 100% !important;
+        /* background-color: #c4141f; */
+    }
+
+    .normal-box .el-form-item {
+        /* background-color: aqua; */
+        /* display: flex; */
+    }
+
+    .normal-box .el-form-item__label {
+        display: flex;
+        width: 130px !important;
+        /* background-color: #c4141f; */
+    }
+
+    .variable .el-form-item__label {
+
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .normal-box .el-form-item__content {
+        /* background-color: lightblue; */
+        width: 51% !important;
+        /* left: -20px; */
+    }
+
+    .normal-box .el-input__inner {
+        width: 110% !important;
+    }
+
+    .el-input__inner {
+        width: 100% !important;
+        /* background-color: green; */
+        flex: 1 !important;
+    }
+
+    .xqjsq .ul,.slf .ul,.zxf .ul,.bqf .ul,.lsf .ul{
+        margin-top: 20px;
+        width: 95% !important;
+        background-color: #fff;
+    }
+    .blank{
+        height: 30px !important;
+    }
+}
+/* .blank{
+    height: 20px !important;
+} */
+/* 适配IPhone5 */
+@media (max-width:325px) {
+    .normal-box .el-form-item {
+        /* background-color: aqua; */
+        /* display: flex; */
+    }
+
+    .normal-box .el-form-item__label {
+        display: flex;
+        width: 130px !important;
+        /* background-color: #c4141f; */
+    }
+
+    .variable .el-form-item__label {
+
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .normal-box .el-form-item__content {
+        /* background-color: lightblue; */
+        width: 40% !important;
+        /* left: -20px; */
+    }
+
+    .normal-box .el-input__inner {
+        width: 110% !important;
+    }
+}
+
+.form-container .selector {
+    width: 90%;
+}
+
+
+
+.calculator-btn {
+    background-color: #c4141f;
+    border: none;
+}
+
+.element-btn {
+    background-color: #c4141f;
+    border: none;
+}
+
+.calculator-btn:hover {
+    background-color: #f9e8e9;
+    color: #c4141f;
+    border: 1px solid #c4141f;
+}
+
+.element-btn:hover {
+    background-color: #f9e8e9;
+    color: #c4141f;
+    border: 1px solid #c4141f;
+}
+
+/* 下拉框的聚焦颜色 */
+.el-input__inner:focus {
+    border-color: #c4141f !important;
+}
+
+/* 下拉框选中的字体颜色 */
+.el-select-dropdown__item.selected {
+    color: #c4141f !important;
+}
+
+/* label标签居中的颜色 */
+.el-form-item__label {
+    text-align: center !important;
+}
+
+/* 表单按钮组 */
+.form-btns .el-form-item__content {
+    margin-left: 0 !important;
+}
+
+.form-container .btns {
+    /* border: 1px solid blue; */
+    width: 100%;
+    justify-content: center;
+}
+
+.comp {
+    background-color: #fff;
+    min-height: 600px;
+    border-radius: 10px;
+}
+
+/* 定义组件切换淡入淡出动画效果 */
+.fade-enter-active,
+.fade-leave-active {
+    transition: opacity 0.5s;
+}
+
+.fade-enter,
+.fade-leave-to {
+    opacity: 0;
+}

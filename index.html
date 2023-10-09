@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>法律计算器</title>
+    <!-- bootstrap.css -->
+    <link rel="stylesheet" href="/vendor/bootstrap/bootstrap.min.css">
+    <!-- elementUI.css -->
+    <link rel="stylesheet" href="/vendor/elementui/index.css">
+
+    <link rel="stylesheet" type="text/css" href="/css/app.css">
+    <link rel="stylesheet" href="/css/index/index.css">
+
+</head>
+
+<body>
+    <div id="app" class="main container">
+        <div class="row  no-gutters">
+            <div class="left-side col-md-3">
+                <div class="l-ul">
+                    <choose-comp></choose-comp>
+                </div>
+            </div>
+
+            <div class="right-side col-md-9">
+                <div class="r-ul">
+                    <div class="blank" :style="{ height: blankHeight }"  id="right-side-blank"></div>
+                    <!-- 右侧组件切换 -->
+
+                    <transition name="fade" mode="out-in">
+                        <keep-alive>
+                            <component :is="activeComp"></component>
+                        </keep-alive>
+                    </transition>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<!-- Vue2 -->
+<script src="/vendor/vue/vue.min.js"></script>
+<script src="/vendor/vue/httpVueLoader.js"></script>
+<!-- elementUI -->
+<script src="/vendor/elementui/index.js"></script>
+<!-- index -->
+<script src="/js/index/index.js"></script>
+
+</html>
